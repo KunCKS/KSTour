@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>高雄旅遊資訊</title>
+    <link rel="stylesheet" href="stylesheets/all.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header ">
+      <div class="container bg-light pb-3">
+        <div
+          class="header-img bg-cover pt-5  negative-row-margin"
+          style="background-image: url(./img/Hero.png);"
+        >
+          <div class="row flex-column align-items-center mt-5">
+            <div class="col-6 mb-4">
+              <h1 class="text-white text-center">
+                高雄旅遊資訊
+              </h1>
+            </div>
+            <div class="col-6 mt-5">
+              <div class="form-group">
+                <select
+                  id="inputState"
+                  class="form-control bg-transparent-gray"
+                >
+                  <option selected>-- 請選擇行政區 --</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="row rectangle-banner-section justify-content-center bg-transparent"
+        >
+          <div
+            class="col-8 bg-white py-3 rounded-lg shadow-sm"
+            id="popularList"
+          >
+            <h4 class="h5">熱門行政區</h4>
+            <button class="btn btn-primary px-4 mr-3">苓雅區</button>
+            <button class="btn btn-danger text-white px-4 mr-3">
+              三民區
+            </button>
+            <button class="btn btn-warning text-white px-4 mr-3">
+              新興區
+            </button>
+            <button class="btn btn-info px-4 mr-3">鹽埕區</button>
+            <button class="btn btn-success px-4 mr-3">前鎮區</button>
+          </div>
+        </div>
+        <div
+          class="text-center d-flex justify-content-center align-items-center text-info"
+        >
+          <div>
+            - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+            - - - - - - - - - - -&nbsp;&nbsp;
+          </div>
+
+          <i
+            class="material-icons text-info center-site icon-bd-round my-3"
+            style="z-index:2; background-color: #f8f9fa;"
+          >
+            arrow_drop_down
+          </i>
+          <div class="text-info">
+            &nbsp;&nbsp;- - - - - - - - - - - - - - - - - - - - - - - - - - - -
+            - - - - - - - - - - - - - - - - -
+          </div>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="container bg-light py-3">
+        <h2 class="text-center text-primary mb-4" id="zoneTitle">三民區</h2>
+        <div class="row" id="dataList">
+          <div class="col-6">
+            <div class="card mb-3">
+              <div
+                class="card-img-top bg-cover position-relative"
+                style="height: 155px; background-image: url(http://khh.travel/FileArtPic.ashx?id=705&w=1280&h=960)"
+              >
+                <div
+                  class="d-flex text-white justify-content-between align-items-end imgTitleToBottom position-absolute"
+                >
+                  <h4 class="mb-0">高雄願景館</h4>
+                  <span>三民區</span>
+                </div>
+              </div>
+              <div class="card-body">
+                <p class="card-text align-middle">
+                  <img
+                    src="img/icons_clock.png"
+                    alt=""
+                  />&nbsp;&nbsp;週二至週日10:00-18:00，每週一公休
+                </p>
+                <p class="card-text">
+                  <img
+                    src="img/icons_pin.png"
+                    alt=""
+                  />&nbsp;&nbsp;高雄市三民區建國二路318號
+                </p>
+                <p class="card-text d-flex justify-content-between">
+                  <span
+                    ><img
+                      src="img/icons_phone.png"
+                      alt=""
+                    />&nbsp;&nbsp;&nbsp;886-7-2363357</span
+                  >
+                  <span
+                    ><img
+                      src="img/icons_tag.png"
+                      alt=""
+                    />&nbsp;&nbsp;免費參觀</span
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container bg-light">
+        <nav
+          aria-label="Page navigation example"
+          class="d-flex justify-content-center"
+        >
+          <ul class="pagination mb-0 py-4" id="pageNav">
+            <li class="page-item">
+              <a class="page-link bg-transparent border-0" href="#"
+                >&lt;&nbsp;Previous</a
+              >
+            </li>
+            <li class="page-item">
+              <a class="page-link bg-transparent border-0" href="#">1</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link bg-transparent border-0" href="#">2</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link bg-transparent border-0" href="#">3</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link bg-transparent border-0" href="#"
+                >Next&nbsp;&gt;</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+    <footer>
+      <div class="container bg-info text-center py-4">
+        <h4 class="h6 text-white">高雄旅遊網</h4>
+        <h4 class="h6 text-warning">資料來源：高雄市政府</h4>
+      </div>
+    </footer>
+  </body>
+  <script src="js/vendor.js"></script>
+  <script src="js/all.js"></script>
+</html>
