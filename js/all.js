@@ -4,6 +4,7 @@ let inputState = document.querySelector("#inputState");
 let zoneTitle = document.querySelector("#zoneTitle");
 let popular = document.querySelector("#popularList");
 let pageNav = document.querySelector("#pageNav");
+let scrollBtn = document.querySelector("#scrollToTop");
 //-----------------指定元素 END-----------------
 let xhr = new XMLHttpRequest();
 xhr.open(
@@ -66,6 +67,10 @@ xhr.onload = function() {
     }
     e.preventDefault();
     paginationShow(e.target.innerText);
+  });
+  scrollBtn.addEventListener("click", function(e) {
+    e.preventDefault();
+    scrollToTop();
   });
   //-----------------監聽元素 END-----------------
   //-----------------初始化-----------------
@@ -274,3 +279,18 @@ xhr.onload = function() {
   }
   //-----------------依資料數建立頁碼 END-----------------
 };
+//ScrollToTop
+window.onscroll = function() {
+  scrollBtnShow();
+};
+function scrollBtnShow() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    scrollBtn.style.display = "block";
+  } else {
+    scrollBtn.style.display = "none";
+  }
+}
+function scrollToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
